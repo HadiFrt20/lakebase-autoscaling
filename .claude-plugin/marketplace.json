@@ -1,0 +1,15 @@
+{
+  "name": "lakebase-autoscaling",
+  "owner": {
+    "name": "lakebase-autoscaling contributors"
+  },
+  "plugins": [
+    {
+      "name": "lakebase-autoscaling",
+      "source": "./",
+      "description": "Lifecycle and operations for Databricks Lakebase Postgres on the Autoscaling tier — projects, branches, endpoints, scaling, and connections.",
+      "category": "databricks",
+      "version": "0.1.0"
+    }
+  ]
+}
