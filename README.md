@@ -17,7 +17,7 @@ A Claude Code plugin for managing **Databricks Lakebase Postgres on the Autoscal
 |---|---|---|
 | Databricks CLI **0.285.0+** | Autoscaling commands are gated on this version | `brew install databricks` (then `databricks --version`) |
 | Authenticated profile | All commands take `-p PROFILE` | `databricks auth login --host <workspace-url> --profile <name>` |
-| `psql` 16+ (optional) | Needed for `/lakebase-connect` and DDL | `brew install postgresql@16` |
+| `psql` 17+ (optional) | Needed for `/lakebase-connect` and DDL. Match the server (Lakebase runs PG17) — psql 16 works for `SELECT`/`CREATE` but breaks meta-commands like `\l` against a PG17 server. | `brew install postgresql@17` |
 | `jq` | Used by helper scripts | `brew install jq` |
 
 A workspace with Lakebase Postgres enabled is required. Ask your Databricks workspace admin if unsure.
